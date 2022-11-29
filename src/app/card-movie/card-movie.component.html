@@ -1,0 +1,23 @@
+<div class="card-pagination">
+  <pagination-controls  (pageChange)="handlePageChange($event)"></pagination-controls>
+</div>
+<div class="container">
+  <div class="movie-card" *ngFor="let movies of getListMovies.results | paginate : {
+    itemsPerPage: paginatorValues.pageSize, currentPage:paginatorValues.page, totalItems: paginatorValues.count }; let i = index">
+    <mat-card class="mat-card">
+      <mat-card-header>
+        <div mat-card-avatar class="movie-header-image"></div>
+        <mat-card-title class="movie-header-title">{{title}}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src={{urlImagem}}{{movies.poster_path}} alt="World the Movie">
+      <mat-card-content class="card-overview">
+        <p class="title">{{movies.title}}</p>
+        <p>{{movies.overview}}</p>
+        <span name="idMovie" #idMovie>{{movies.id}}</span>
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="mat-button" mat-button (click)="openDialog()">Trailer</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>

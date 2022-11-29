@@ -1,0 +1,64 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    margin: -100px 0px 0px 0px;
+    padding: 3%;
+}
+
+.movie-card {
+    width: 28.5%;
+    height: auto;
+    box-shadow: 10px 5px 5px 5px gray;
+    padding: 1%;
+    float: right;
+    margin: 20px 0px 0px 40px;
+}
+
+.movie-header-image {
+    background-image: url("../../assets/world-flat.png");
+    background-size: cover;
+    padding: 0%;
+    float: left;
+    margin: 0px 0px 20px 0px;
+}
+
+.movie-header-title {
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+    text-shadow: 2px 2px 2px red, 0 0 1em yellow, 0 0 0.2em red;
+    margin: 10px 0px 0px 0px;
+}
+
+.title {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 24px;
+    text-shadow: 2px 2px 2px red, 0 0 1em red, 0 0 0.2em red;
+    text-align: center;
+}
+
+.card-overview {
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+}
+
+.btn-trailer {
+    color: white;
+    background-color: red;
+}
+
+.mat-button {
+    background-color: darkgrey;
+    text-align: center;
+    font-weight: bold;
+    color: crimson;
+}
+
+.card-pagination {
+    width: 45%;
+    height: 12%;
+    margin: 0px 0px 0px 320px;
+}
